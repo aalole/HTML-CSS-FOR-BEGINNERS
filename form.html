@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form </title>
+</head>
+<body>
+    <!-- form attributes -->
+    <form action="example.php" target="_blank" method="post">
+        <!-- form elements -->
+        <fieldset>
+        <label for="username">Username</label><br>
+        
+            <!-- input types -->
+        <input type="text" name="username" id="username" placeholder="enter your username" maxlength="50" minlength="3">
+        <input type="number" name="age" id="age" disabled value="30">
+        <input type="email" name="email" id="email" required>
+        <input type="password" name="password" id="password" pattern="">
+        <input type="file" name="file" id="file">
+        <input type="image" src="" alt="user image">
+        <input type="checkbox">
+        <input type="button" value="submit">
+
+
+        <select name="gender" id="gender" placeholder="selcet your gender" >
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="nil">preferred not to mention</option>
+        </select>
+        <div>
+            <label for="hidden">hidden</label>
+            <input type="hidden" name="hidden">
+        </div>
+        <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+        <button>Submit</button>
+        </fieldset>
+
+    </form>
+</body>
+</html>
