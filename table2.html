@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table cell span</title>
+
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 5px;
+          text-align: left;    
+        }
+        </style>
+</head>
+<body>
+    <table style="width: 60%;">
+        <tr>
+            <th>firstname</th>
+            <td>Mikail</td>
+        </tr>
+        <tr>
+            <th rowspan="2">lastnames</th>
+            <td>Rasheed</td>
+        </tr>
+        <tr>
+            <td>Abey</td>
+        </tr>
+    </table>
+
+    <table style="width:60%; margin-top: 20px">
+        <caption>Col Span</caption>
+            <tr>
+              <th>Name</th>
+              <th colspan="2">Marital status</th>
+            </tr>
+            <tr>
+              <td>Barry Shina</td>
+              <td>Single</td>
+              <td>Searching</td>
+            </tr>
+      </table>
+</body>
+</html>
